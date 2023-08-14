@@ -32,5 +32,5 @@ export default defineConfig({
       })
     })
   ],
-  base: '/vite-react-start/'
+  base: '/vite-react-start/' // має відповідати шляху в index.jsx
 });
