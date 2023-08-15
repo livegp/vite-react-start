@@ -1,5 +1,4 @@
 import { defineConfig } from 'vite';
-import { glob } from 'glob';
 import react from '@vitejs/plugin-react-swc';
 import eslintPlugin from '@nabla/vite-plugin-eslint';
 import injectHTML from 'vite-plugin-html-inject';
@@ -39,11 +38,5 @@ export default defineConfig({
     FullReload(['./src/**/**.html']),
     reactClickToComponent()
   ],
-  root: 'src',
-  build: {
-    rollupOptions: {
-      input: glob.sync('./src/*.html')
-    }
-  },
   base: '/vite-react-start/' // має відповідати шляху в index.jsx
 });
