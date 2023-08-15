@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 import eslintPlugin from '@nabla/vite-plugin-eslint';
+
 import stylelint from 'vite-plugin-stylelint';
 import { ViteMinifyPlugin } from 'vite-plugin-minify';
 import VitePluginSvgSpritemap from '@spiriit/vite-plugin-svg-spritemap';
@@ -8,8 +9,6 @@ import webfontDownload from 'vite-plugin-webfont-dl';
 import zipPack from 'vite-plugin-zip-pack';
 import autoAlias from 'vite-plugin-auto-alias';
 import imagePresets, { widthPreset } from 'vite-plugin-image-presets';
-
-const GHPAGES = 'vite-react-start';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -34,5 +33,5 @@ export default defineConfig({
       })
     })
   ],
-  base: `/${GHPAGES}/` // має відповідати шляху в index.jsx
+  base: '/vite-react-start/' // має відповідати шляху в index.jsx
 });
