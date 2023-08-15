@@ -83,6 +83,9 @@ dependencies:
   vite-plugin-minify:
     specifier: ^1.5.2
     version: 1.5.2(vite@4.4.9)
+  vite-plugin-react-click-to-component:
+    specifier: ^2.0.0
+    version: 2.0.0(react@18.2.0)(vite@4.4.9)
   vite-plugin-stylelint:
     specifier: ^4.3.0
     version: 4.3.0(postcss@8.4.27)(stylelint@15.10.2)(vite@4.4.9)
@@ -6205,6 +6208,16 @@ packages:
       vite: '*'
     dependencies:
       html-minifier-terser: 6.1.0
+      vite: 4.4.9(terser@5.19.2)
+    dev: false
+
+  /vite-plugin-react-click-to-component@2.0.0(react@18.2.0)(vite@4.4.9):
+    resolution: {integrity: sha512-wjxtiBC6EhDnrp/4NctO7pf0GcjyFrDy04QwPNw7vWIM//2iSrJrR2EJx5lI8LyAxdAPbQpeUQklUd7jL//xOg==}
+    peerDependencies:
+      react: '>=16'
+      vite: ^2 || ^3 || ^4
+    dependencies:
+      react: 18.2.0
       vite: 4.4.9(terser@5.19.2)
     dev: false
 

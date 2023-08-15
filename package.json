@@ -42,6 +42,7 @@
     "vite-plugin-image-presets": "^0.3.4",
     "vite-plugin-linter": "^2.0.3",
     "vite-plugin-minify": "^1.5.2",
+    "vite-plugin-react-click-to-component": "^2.0.0",
     "vite-plugin-stylelint": "^4.3.0",
     "vite-plugin-webfont-dl": "^3.7.6",
     "vite-plugin-zip-pack": "^1.0.6",
