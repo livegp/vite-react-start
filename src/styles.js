@@ -57,6 +57,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+#root {
+  height: 100%;
+}
 `;
 
 export default GlobalStyle;
