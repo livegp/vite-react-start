@@ -9,6 +9,8 @@ import zipPack from 'vite-plugin-zip-pack';
 import autoAlias from 'vite-plugin-auto-alias';
 import imagePresets, { widthPreset } from 'vite-plugin-image-presets';
 
+const GHPAGES = 'vite-react-start';
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -32,5 +34,5 @@ export default defineConfig({
       })
     })
   ],
-  base: '/vite-react-start/' // має відповідати шляху в index.jsx
+  base: `/${GHPAGES}/` // має відповідати шляху в index.jsx
 });
