@@ -2,6 +2,9 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 import eslintPlugin from '@nabla/vite-plugin-eslint';
 
+import injectHTML from 'vite-plugin-html-inject';
+import FullReload from 'vite-plugin-full-reload';
+
 import stylelint from 'vite-plugin-stylelint';
 import { ViteMinifyPlugin } from 'vite-plugin-minify';
 import VitePluginSvgSpritemap from '@spiriit/vite-plugin-svg-spritemap';
@@ -31,7 +34,9 @@ export default defineConfig({
           jpg: { quality: 70 }
         }
       })
-    })
+    }),
+    injectHTML(),
+    FullReload(['./src/**/**.html'])
   ],
   base: '/vite-react-start/' // має відповідати шляху в index.jsx
 });
